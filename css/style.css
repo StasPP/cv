@@ -750,7 +750,7 @@ ul.portfolio-image li .desc{
 }
 .card {
   background: #ffffff;
-  padding: 20px 35px 45px 35px;
+  padding: 20px 35px 25px 35px;
   margin-bottom: 30px;
   border: 1px solid rgba(129, 129, 129, 0.1);
 }
@@ -1296,11 +1296,11 @@ ul.portfolio-image li .desc{
     background-color: #eeeeee;
     left: 50%;
     margin-left: -1.5px;
-    
 }
 .timeline > li {
     margin-bottom: 20px;
     position: relative;
+	border-radius: 2px;
 }
 .timeline > li:before,
 .timeline > li:after {
@@ -1314,11 +1314,11 @@ ul.portfolio-image li .desc{
     width: 50%;
     float: left;
     border: 1px solid #d4d4d4;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 10px;
     position: relative;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    
+  
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.175);
 }
 
 .timeline > li:not(.timeline-inverted) {
@@ -1382,3 +1382,38 @@ ul.portfolio-image li .desc{
 	font-weight: lighter;
 		color: gray;
 }
+
+/* Table */
+
+	.table-wrapper {
+		-webkit-overflow-scrolling: touch;
+		overflow-x: auto;
+		
+	}
+
+	.new table {
+		margin: 0 0 1.5rem 0;
+		width: 100%;
+	}
+
+		.new table tbody tr {
+			border: solid 1px rgba(155, 155, 155, 0.5);
+			border-left: 0;
+			border-right: 0;
+		}
+
+			.new table tbody tr:nth-child(2n + 1) {
+				background-color: rgba(155, 155, 155, 0.095);
+			}
+
+		.new table td {
+			padding: 0.75rem 0.75rem;
+		}
+
+		.new table th {
+			color: rgba(255, 255, 255, 0.875);
+			font-size: 0.9rem;
+			font-weight: 400;
+			padding: 0 0.75rem 0.75rem 0.75rem;
+			text-align: left;
+		}
